@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Sarvenaz Media Mandiri</title>
+    <!-- tailwindcss -->
+    <link href="src/output.css" rel="stylesheet" />
+    <!-- /tailwindcss -->
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="container flex items-center justify-between py-3 px-5 relative lg:px-24">
+          <div class="nav-logo flex items-center">
+            <img
+              src="src/img/sarvenaz-no-bg.png"
+              alt="sarvenaz-logo"
+              class="w-20 lg:w-18"
+            />
+
+            <h2 class="font-bold text-2xl">Sarvenaz</h2>
+          </div>
+
+          <div class="hamburger px-3 right-4 absolute sm:right-0 md:hidden lg:hidden lg:right-0 lg:px-0">
+            <div class="hamburger-bar w-5 h-1 my-1 bg-slate-700"></div>
+            <div class="hamburger-bar w-5 h-1 my-1 bg-slate-700"></div>
+            <div class="hamburger-bar w-5 h-1 my-1 bg-slate-700"></div>
+          </div>
+
+          <div class="nav-items absolute right-10 hidden sm:right-0 lg:block md:block md:right-0 md:static">
+            <ul class="flex items-center">
+              <li class="mx-2"><a href="/" class="hover:opacity-70 transition duration-500">Profile</a></li>
+              <li class="mx-2"><a href="/blog" class="hover:opacity-70 transition duration-500">Blog</a></li>
+              <li class="mx-2"><a href="/" class="hover:opacity-70 transition duration-500">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- hero -->
+      <section id="hero" class="pt-12"></section>
+        <div class="container px-24 mx-auto">
+          <div class="">
+            <h1 class="font-bold text-2xl mb-4">Blog | Berita dan Informasi</h1>
+            <p class="text-slate-500 font-base">
+              Temukan berbagai berita terbaru dan informasi penting seputar layanan kami, perkembangan industri telekomunikasi, serta tips dan panduan praktis untuk memaksimalkan penggunaan layanan server pulsa.
+            </p>
+        </div>
+      </section>
+    <!-- /hero -->
+
+    <!-- filter-form -->
+      <form action="" class="mt-12 lg:grid lg:grid-cols-4 lg:gap-12">
+        <div class="w-full mb-3">
+          <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border">
+            <option value="">Category: All</option>
+            <option value="">CSR</option>
+            <option value="">Siaran Pers</option>
+            <option value="">Enterprise</option>
+            <option value="">Wholesale</option>
+          </select>
+        </div>
+
+        <div class="flex mb-3 gap-x-3 lg:block w-full lg:mb-0 lg:gap-x-0">
+          <div class="w-1/2 lg:w-full">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border">
+              <option value="">Month</option>
+              <option value="">January</option>
+              <option value="">February</option>
+              <option value="">March</option>
+              <option value="">April</option>
+              <option value="">May</option>
+              <option value="">June</option>
+              <option value="">July</option>
+              <option value="">August</option>
+              <option value="">September</option>
+              <option value="">October</option>
+              <option value="">November</option>
+              <option value="">December</option>
+            </select>
+          </div>
+
+          <div class="w-1/2 lg:w-full lg:hidden">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border">
+              <option value="">Year</option>
+              <option value="">2024</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lg:block hidden">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border">
+              <option value="">Year</option>
+              <option value="">2024</option>
+            </select>
+          </div>
+
+        <div class="lg:w-full">
+          <input type="search" class="px-5 py-3 w-full border rounded-lg focus:outline-none focus:ring-blue-400 focus:shadow-lg transition duration-500" placeholder="Search">
+        </div>
+      </form>
+    <!-- /filter-form -->
+
+    <!-- blog -->
+      <section id="blog" class="pt-12">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 gap-24 sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+            <!-- Card 1 -->
+            <div class="">
+              <img src="src/img/blog-2.jpg" alt="" class="rounded-xl" />
+              <div class="flex justify-between mt-3 text-slate-500">
+                <p class="text-xs">1 Hours ago</p>
+                <p class="text-xs"><span>M Azfa Asykarulloh</span></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold mt-5 mb-4">Infomedia Dinobatkan</h4>
+                <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="">
+              <img src="src/img/blog-1.jpg" alt="" class="rounded-xl" />
+              <div class="flex justify-between mt-3 text-slate-500">
+                <p class="text-xs">2 Hours ago</p>
+                <p class="text-xs"><span>Vidya Aqilah Putri</span></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold mt-5 mb-4">Bigbox Sarvenaz Diterapkan</h4>
+                <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="">
+              <img src="src/img/blog-3.jpg" alt="" class="rounded-xl" />
+              <div class="flex justify-between mt-3 text-slate-500">
+                <p class="text-xs">3 Hours ago</p>
+                <p class="text-xs"><span>M Ilham Maxwell</span></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold mt-5 mb-4">Kolaborasi Sarvenaz Microsoft</h4>
+                <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="">
+              <img src="src/img/blog-2.jpg" alt="" class="rounded-xl" />
+              <div class="flex justify-between mt-3 text-slate-500">
+                <p class="text-xs">1 Hours ago</p>
+                <p class="text-xs"><span>M Azfa Asykarulloh</span></p>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold mt-5 mb-4">Infomedia Dinobatkan</h4>
+                <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- /blog -->
+
+    <!-- footer -->
+      <footer class="text-slate-500 p-8 text-center text-xs font-medium pt-24">
+        Copyright &copy; 2024 Sarvenaz. All right reserved.
+      </footer>
+    <!-- /footer -->
+  </body>
+</html>
