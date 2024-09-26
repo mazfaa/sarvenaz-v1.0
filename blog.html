@@ -54,9 +54,9 @@
 
           <div class="nav-items absolute right-10 hidden sm:right-0 lg:block md:block md:right-0 md:static">
             <ul class="flex items-center">
-              <li class="mx-2"><a href="/" class="hover:opacity-70 transition duration-500">Profile</a></li>
-              <li class="mx-2"><a href="/blog" class="hover:opacity-70 transition duration-500">Blog</a></li>
-              <li class="mx-2"><a href="/" class="hover:opacity-70 transition duration-500">Sustainability</a></li>
+              <li class="mx-2"><a href="index.html" class="hover:opacity-70 transition duration-500">Profile</a></li>
+              <li class="mx-2"><a href="blog.html" class="hover:opacity-70 transition duration-500">Blog</a></li>
+              <li class="mx-2"><a href="sustainability.html" class="hover:opacity-70 transition duration-500">Sustainability</a></li>
             </ul>
           </div>
         </div>
@@ -78,8 +78,8 @@
 
     <!-- filter-form -->
       <form action="" class="mt-12 lg:grid lg:grid-cols-4 lg:gap-12">
-        <div class="w-full mb-3">
-          <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border">
+        <div class="w-full mb-3 rounded-lg">
+          <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border rounded-lg shadow">
             <option value="">Category: All</option>
             <option value="">CSR</option>
             <option value="">Siaran Pers</option>
@@ -89,8 +89,8 @@
         </div>
 
         <div class="flex mb-3 gap-x-3 lg:block w-full lg:mb-0 lg:gap-x-0">
-          <div class="w-1/2 lg:w-full">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border">
+          <div class="w-1/2 lg:w-full rounded-lg">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border rounded-lg shadow">
               <option value="">Month</option>
               <option value="">January</option>
               <option value="">February</option>
@@ -107,23 +107,32 @@
             </select>
           </div>
 
-          <div class="w-1/2 lg:w-full lg:hidden">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border">
+          <div class="w-1/2 lg:w-full lg:hidden rounded-lg">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border rounded-lg shadow">
               <option value="">Year</option>
               <option value="">2024</option>
             </select>
           </div>
         </div>
 
-        <div class="lg:block hidden">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border">
+        <div class="lg:block hidden rounded-lg">
+            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border rounded-lg shadow">
               <option value="">Year</option>
               <option value="">2024</option>
             </select>
           </div>
 
-        <div class="lg:w-full">
-          <input type="search" class="px-5 py-3 w-full border rounded-lg focus:outline-none focus:ring-blue-400 focus:shadow-lg transition duration-500" placeholder="Search">
+        <div class="lg:w-full relative">
+          <!-- Icon -->
+          <div class="absolute inset-y-4 right-0 pr-3 pointer-events-none">
+            <!-- Example icon (using Heroicons) -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-5 w-5 text-gray-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+          </div>
+          <!-- Input field -->
+          <input type="search" class=" form-input px-5 py-3 w-full border rounded-lg focus:outline-none focus:ring-blue-400 focus:shadow-lg transition duration-500" placeholder="Search">
         </div>
       </form>
     <!-- /filter-form -->
@@ -142,6 +151,8 @@
               <div>
                 <h4 class="text-lg font-semibold mt-5 mb-4">Infomedia Dinobatkan</h4>
                 <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+
+                <a href="/blog/detail" class="bg-slate-700 rounded-lg text-white px-4 py-2 mt-5 inline-block">See More</a>
               </div>
             </div>
 
@@ -155,6 +166,8 @@
               <div>
                 <h4 class="text-lg font-semibold mt-5 mb-4">Bigbox Sarvenaz Diterapkan</h4>
                 <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+
+                <a href="/blog/detail" class="bg-slate-700 rounded-lg text-white px-4 py-2 mt-5 inline-block">See More</a>
               </div>
             </div>
 
@@ -168,6 +181,8 @@
               <div>
                 <h4 class="text-lg font-semibold mt-5 mb-4">Kolaborasi Sarvenaz Microsoft</h4>
                 <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+
+                <a href="/blog/detail" class="bg-slate-700 rounded-lg text-white px-4 py-2 mt-5 inline-block">See More</a>
               </div>
             </div>
 
@@ -181,6 +196,8 @@
               <div>
                 <h4 class="text-lg font-semibold mt-5 mb-4">Infomedia Dinobatkan</h4>
                 <p class="text-sm text-slate-500">Jakarta, 24 September 2024 - PT Telkom Indonesia (Persero) Tbk (Telkom) yang kini bertransformasi sebagai perusahaan digital telco ...</p>
+
+                <a href="/blog/detail" class="bg-slate-700 rounded-lg text-white px-4 py-2 mt-5 inline-block">See More</a>
               </div>
             </div>
           </div>
