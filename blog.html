@@ -34,11 +34,11 @@
   <body>
     <!-- header -->
     <header>
-      <nav>
+      <nav class="shadow-md">
         <div
           class="container flex items-center justify-between py-3 px-5 relative lg:px-24"
         >
-          <div class="nav-logo flex items-center space-x-2">
+          <div class="nav-logo flex items-center space-x-2 sm:pl-8">
             <img
               src="src/img/sarvenaz-no-bg.png"
               alt="sarvenaz-logo"
@@ -97,9 +97,9 @@
 
     <!-- hero -->
       <section id="hero" class="pt-12"></section>
-        <div class="container px-24 mx-auto">
+        <div class="container px-12 lg:px-24 mx-auto">
           <div class="">
-            <h1 class="font-bold text-2xl mb-4">Blog | Berita dan Informasi</h1>
+            <h1 class="font-bold text-2xl mb-6">Blog | Berita dan Informasi</h1>
             <p class="text-slate-500 font-base">
               Temukan berbagai berita terbaru dan informasi penting seputar layanan kami, perkembangan industri telekomunikasi, serta tips dan panduan praktis untuk memaksimalkan penggunaan layanan server pulsa.
             </p>
@@ -108,64 +108,43 @@
     <!-- /hero -->
 
     <!-- filter-form -->
-      <form action="" class="mt-12 lg:grid lg:grid-cols-4 lg:gap-12">
-        <div class="w-full mb-3 rounded-lg">
-          <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border rounded-lg shadow">
-            <option value="">Category: All</option>
-            <option value="">CSR</option>
-            <option value="">Siaran Pers</option>
-            <option value="">Enterprise</option>
-            <option value="">Wholesale</option>
-          </select>
-        </div>
+    <form class="max-w-sm mx-auto mt-12 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:max-w-full sm:gap-x-6">
+      <div>
+        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected>All Category</option>
+          <option value="enterprise">Enterprise</option>
+          <option value="wholesale">Wholesale</option>
+          <option value="siaran_pers">Siaran Pers</option>
+          <option value="csr">CSR</option>
+        </select>
+      </div>
 
-        <div class="flex mb-3 gap-x-3 lg:block w-full lg:mb-0 lg:gap-x-0">
-          <div class="w-1/2 lg:w-full rounded-lg">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full mb-3 border rounded-lg shadow">
-              <option value="">Month</option>
-              <option value="">January</option>
-              <option value="">February</option>
-              <option value="">March</option>
-              <option value="">April</option>
-              <option value="">May</option>
-              <option value="">June</option>
-              <option value="">July</option>
-              <option value="">August</option>
-              <option value="">September</option>
-              <option value="">October</option>
-              <option value="">November</option>
-              <option value="">December</option>
-            </select>
-          </div>
+      <div>
+        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Years</label>
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected>2024</option>
+        </select>
+      </div>
 
-          <div class="w-1/2 lg:w-full lg:hidden rounded-lg">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border rounded-lg shadow">
-              <option value="">Year</option>
-              <option value="">2024</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="lg:block hidden rounded-lg">
-            <select name="" id="" class="ring-gray-500 px-5 py-3 w-full border rounded-lg shadow">
-              <option value="">Year</option>
-              <option value="">2024</option>
-            </select>
-          </div>
-
-        <div class="lg:w-full relative">
-          <!-- Icon -->
-          <div class="absolute inset-y-4 right-0 pr-3 pointer-events-none">
-            <!-- Example icon (using Heroicons) -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-5 w-5 text-gray-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-
-          </div>
-          <!-- Input field -->
-          <input type="search" class=" form-input px-5 py-3 w-full border rounded-lg focus:outline-none focus:ring-blue-400 focus:shadow-lg transition duration-500 shadow" placeholder="Search">
-        </div>
-      </form>
+      <div>
+        <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Months</label>
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option selected value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>
+      </div>
+    </form>
     <!-- /filter-form -->
 
     <!-- blog -->
