@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="sticky top-0 z-10 bg-white">
       <nav class="shadow-md">
         <div
           class="container flex items-center justify-between py-3 px-5 relative lg:px-24"
@@ -48,7 +48,7 @@
             <h2 class="font-semibold text-lg">Sarvenaz</h2>
           </div>
 
-          <div
+          <div id="hamburger"
             class="hamburger px-3 right-4 absolute sm:right-0 md:hidden lg:hidden lg:right-0 lg:px-0"
           >
             <div class="hamburger-bar w-5 h-1 my-1 bg-slate-700"></div>
@@ -91,6 +91,37 @@
             </ul>
           </div>
         </div>
+
+        <ul id="dropdown-nav" class="text-slate-500 px-8 py-4 grid grid-cols-1 gap-y-3 transition-all ease-in-out transform opacity-0 duration-500 hidden">
+          <li>
+            <a
+              href="index.html"
+              class="hover:opacity-70 transition duration-500"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="hover:opacity-70 transition duration-500"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="sustainability.html"
+              class="hover:opacity-70 transition duration-500"
+              >Sustainability</a
+            >
+          </li>
+          <li>
+            <a
+              href="career.html"
+              class="hover:opacity-70 transition duration-500"
+              >Career</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- /header -->
@@ -220,5 +251,10 @@
         Copyright &copy; 2024 Sarvenaz. All right reserved.
       </footer>
     <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="jquery-3.7.1.slim.min.js"></script>
+    
+    <script src="blog.js"></script>
   </body>
 </html>
