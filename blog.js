@@ -6,3 +6,5 @@ $(document).ready(function () {
     }, 10); // Timeout ensures the transition kicks in after removing 'hidden'
   });
 });
+
+// Remove alert
